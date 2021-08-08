@@ -1,0 +1,7 @@
+package exlcm;
+struct example_t
+{
+    int64_t  id;
+    string   name;
+    boolean  enabled;
+}
