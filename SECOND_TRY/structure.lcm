@@ -1,7 +1,0 @@
-package exlcm;
-struct structure
-{
-    int64_t id;
-    string message;
-    boolean enabled;
-}
