@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>849</width>
-    <height>518</height>
+    <width>851</width>
+    <height>519</height>
    </rect>
   </property>
   <property name="maximumSize">
    <size>
-    <width>851</width>
-    <height>519</height>
+    <width>1280</width>
+    <height>720</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -25,6 +25,12 @@
      <widget class="QFrame" name="frame">
       <property name="enabled">
        <bool>true</bool>
+      </property>
+      <property name="sizeIncrement">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
       </property>
       <property name="styleSheet">
        <string notr="true">QFrame{
@@ -84,7 +90,7 @@ color: rgb(238, 238, 236);
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QTextEdit" name="textEdit_3">
+       <widget class="QTextEdit" name="velocity_t">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -97,6 +103,9 @@ color: rgb(238, 238, 236);
          <string notr="true">QTextEdit{
 background-color: rgb(0, 240, 255);
 }</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -146,7 +155,7 @@ color: rgb(238, 238, 236);
          <string>DISTANCE MOVED</string>
         </property>
        </widget>
-       <widget class="QTextEdit" name="textEdit_2">
+       <widget class="QTextEdit" name="dist_t">
         <property name="geometry">
          <rect>
           <x>180</x>
@@ -159,6 +168,9 @@ color: rgb(238, 238, 236);
          <string notr="true">QTextEdit{
 background-color: rgb(0, 240, 255);
 }</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -205,7 +217,7 @@ color: rgb(238, 238, 236);
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QTextEdit" name="textEdit_4">
+       <widget class="QTextEdit" name="main_battery_v">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -220,8 +232,11 @@ background-color: rgb(0, 240, 255);
 }
 </string>
         </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
        </widget>
-       <widget class="QTextEdit" name="textEdit_5">
+       <widget class="QTextEdit" name="main_battery_c">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -235,6 +250,9 @@ background-color: rgb(0, 240, 255);
 background-color: rgb(0, 240, 255);
 }
 </string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -258,7 +276,7 @@ background-color: rgba(0, 0, 0, 100);
        <property name="frameShadow">
         <enum>QFrame::Raised</enum>
        </property>
-       <widget class="QTextEdit" name="textEdit_6">
+       <widget class="QTextEdit" name="second_batttery_v">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -273,8 +291,11 @@ background-color: rgb(0, 240, 255);
 }
 </string>
         </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
        </widget>
-       <widget class="QTextEdit" name="textEdit_7">
+       <widget class="QTextEdit" name="second_battery_c">
         <property name="geometry">
          <rect>
           <x>20</x>
@@ -288,6 +309,9 @@ background-color: rgb(0, 240, 255);
 background-color: rgb(0, 240, 255);
 }
 </string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
         </property>
        </widget>
        <widget class="QLabel" name="label_5">
@@ -368,7 +392,7 @@ color: rgb(238, 238, 236);
          <string>TextLabel</string>
         </property>
        </widget>
-       <widget class="QTextEdit" name="textEdit_8">
+       <widget class="QTextEdit" name="acc_t">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -381,6 +405,9 @@ color: rgb(238, 238, 236);
          <string notr="true">QTextEdit{
 background-color: rgb(0, 240, 255);
 }</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -450,20 +477,22 @@ color: rgb(238, 238, 236);
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QProgressBar" name="progressBar">
+       <widget class="QTextEdit" name="dist_t_2">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>50</y>
-          <width>151</width>
-          <height>23</height>
+          <x>10</x>
+          <y>40</y>
+          <width>161</width>
+          <height>31</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);</string>
+         <string notr="true">QTextEdit{
+background-color: rgb(0, 240, 255);
+}</string>
         </property>
-        <property name="value">
-         <number>75</number>
+        <property name="readOnly">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -485,25 +514,6 @@ color: rgb(238, 238, 236);
        <property name="frameShadow">
         <enum>QFrame::Raised</enum>
        </property>
-       <widget class="QProgressBar" name="progressBar_2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>70</y>
-          <width>41</width>
-          <height>191</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="value">
-         <number>75</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_23">
         <property name="geometry">
          <rect>
@@ -555,25 +565,6 @@ color: rgb(238, 238, 236);
        <property name="frameShadow">
         <enum>QFrame::Raised</enum>
        </property>
-       <widget class="QProgressBar" name="progressBar_3">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>70</y>
-          <width>41</width>
-          <height>191</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: rgb(255, 255, 255);</string>
-        </property>
-        <property name="value">
-         <number>75</number>
-        </property>
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_26">
         <property name="geometry">
          <rect>
@@ -629,7 +620,7 @@ color: rgb(238, 238, 236);
          <string>POD STATE</string>
         </property>
        </widget>
-       <widget class="QTextEdit" name="textEdit">
+       <widget class="QTextEdit" name="state_t">
         <property name="geometry">
          <rect>
           <x>40</x>
@@ -642,6 +633,9 @@ color: rgb(238, 238, 236);
          <string notr="true">QTextEdit{
 background-color: rgb(0, 240, 255);
 }</string>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
         </property>
        </widget>
       </widget>
@@ -748,7 +742,7 @@ color: rgb(238, 238, 236);
         <enum>QFrame::Raised</enum>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="start_b">
        <property name="geometry">
         <rect>
          <x>410</x>
@@ -766,7 +760,7 @@ background-color: rgb(0, 240, 255);
         <string>START</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="stop_b">
        <property name="geometry">
         <rect>
          <x>480</x>
@@ -784,7 +778,7 @@ background-color: rgb(0, 240, 255);
         <string>STOP</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_3">
+      <widget class="QPushButton" name="estop_b">
        <property name="geometry">
         <rect>
          <x>410</x>
